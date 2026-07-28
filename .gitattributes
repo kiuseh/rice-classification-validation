@@ -1,0 +1,5 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+*.ipynb text eol=lf
+*.png binary
+*.xlsx binary

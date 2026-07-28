@@ -1,0 +1,104 @@
+{
+  "dataset": {
+    "rows": 3810,
+    "features": 7,
+    "missing_values": 0,
+    "duplicate_rows": 0,
+    "class_distribution": {
+      "Cammeo": 1630,
+      "Osmancik": 2180
+    }
+  },
+  "configuration": {
+    "model": "RandomForestClassifier",
+    "n_estimators": 300,
+    "min_samples_leaf": 2,
+    "test_size": 0.2,
+    "cv_splits": 5,
+    "random_state": 42
+  },
+  "split": {
+    "training_rows": 3048,
+    "holdout_rows": 762,
+    "stratified": true
+  },
+  "cross_validation_on_training_partition": {
+    "accuracy": {
+      "mean": 0.9245341731944332,
+      "std": 0.011030731138653651
+    },
+    "balanced_accuracy": {
+      "mean": 0.9227456494366878,
+      "std": 0.01015869895733062
+    },
+    "macro_precision": {
+      "mean": 0.9234701874434877,
+      "std": 0.012014618357157758
+    },
+    "macro_recall": {
+      "mean": 0.9227456494366878,
+      "std": 0.01015869895733062
+    },
+    "macro_f1": {
+      "mean": 0.922907711927446,
+      "std": 0.011063348971138679
+    }
+  },
+  "holdout": {
+    "accuracy": 0.9212598425196851,
+    "balanced_accuracy": 0.9161014802724152,
+    "macro_precision": 0.9229575490588706,
+    "macro_recall": 0.9161014802724152,
+    "macro_f1": 0.918973522844079,
+    "label_order": [
+      "Cammeo",
+      "Osmancik"
+    ],
+    "confusion_matrix": [
+      [
+        287,
+        39
+      ],
+      [
+        21,
+        415
+      ]
+    ],
+    "classification_report": {
+      "Cammeo": {
+        "precision": 0.9318181818181818,
+        "recall": 0.8803680981595092,
+        "f1-score": 0.9053627760252366,
+        "support": 326.0
+      },
+      "Osmancik": {
+        "precision": 0.9140969162995595,
+        "recall": 0.9518348623853211,
+        "f1-score": 0.9325842696629213,
+        "support": 436.0
+      },
+      "accuracy": 0.9212598425196851,
+      "macro avg": {
+        "precision": 0.9229575490588706,
+        "recall": 0.9161014802724152,
+        "f1-score": 0.918973522844079,
+        "support": 762.0
+      },
+      "weighted avg": {
+        "precision": 0.921678455090991,
+        "recall": 0.9212598425196851,
+        "f1-score": 0.9209383288153029,
+        "support": 762.0
+      }
+    }
+  },
+  "feature_importance": {
+    "Major_Axis_Length": 0.3136451699475462,
+    "Perimeter": 0.26177221984839694,
+    "Area": 0.15357934441099574,
+    "Convex_Area": 0.1396521005009847,
+    "Eccentricity": 0.0740814404002537,
+    "Minor_Axis_Length": 0.032767844566328135,
+    "Extent": 0.024501880325494666
+  }
+}
